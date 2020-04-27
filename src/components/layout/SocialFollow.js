@@ -5,10 +5,6 @@ import Col from "react-bootstrap/Col"
 
 const SocialMediaFollow = () => {
 
-    const url = window.location.href
-
-    console.log(url)
-
     return (
         <Fragment>
             <Container fluid>

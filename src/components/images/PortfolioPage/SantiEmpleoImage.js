@@ -27,7 +27,7 @@ const SantiempleoImage = () => {
       height: "auto"
     }}
     fluid={Image}
-    alt={"Services Related Image"}
+    alt={"Santempleo logo"}
   >
   </Img>
 }

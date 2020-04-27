@@ -27,7 +27,7 @@ const CoreTechImage = () => {
       height: "auto"
     }}
     fluid={Image}
-    alt={"Services Related Image"}
+    alt={"Core web items related image"}
   >
   </Img>
 }

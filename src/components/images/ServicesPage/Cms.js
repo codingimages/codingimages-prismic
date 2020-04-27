@@ -27,7 +27,7 @@ const CmsTechImage = () => {
       height: "auto"
     }}
     fluid={Image}
-    alt={"Services Related Image"}
+    alt={"CMS related image"}
   >
   </Img>
 }

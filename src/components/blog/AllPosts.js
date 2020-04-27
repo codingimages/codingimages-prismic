@@ -33,7 +33,7 @@ const AllBlogPosts = () => {
     `)
 
   const resultado = result.prismic.allBlogs.edges
-  console.log(result.prismic.allBlogs.edges)
+  // console.log(result.prismic.allBlogs.edges)
 
   return (
 

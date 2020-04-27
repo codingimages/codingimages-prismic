@@ -2,11 +2,11 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const BlogImage = () => {
+const HtmlCssJs = () => {
 
   const data = useStaticQuery(graphql`
     query{
-        file(relativePath: {eq: "blog.png"}){
+        file(relativePath: {eq: "htmlcssjs.png"}){
           childImageSharp{
             fluid{
                 ...GatsbyImageSharpFluid
@@ -26,9 +26,9 @@ const BlogImage = () => {
       height: "auto"
     }}
     fluid={Image}
-    alt={"Services Related Image"}
+    alt={"Core web items related image"}
   >
   </Img>
 }
 
-export default BlogImage
+export default HtmlCssJs

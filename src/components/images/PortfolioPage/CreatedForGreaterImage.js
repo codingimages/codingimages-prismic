@@ -27,7 +27,7 @@ const CreatedForGreaterImage = () => {
       height: "auto"
     }}
     fluid={Image}
-    alt={"Services Related Image"}
+    alt={"Created for greater logo"}
   >
   </Img>
 }

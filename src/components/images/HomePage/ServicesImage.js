@@ -26,7 +26,7 @@ const ServicesImage = () => {
       height: "auto"
     }}
     fluid={Image}
-    alt={"Services Related Image"}
+    alt={"Services related image"}
   >
   </Img>
 }

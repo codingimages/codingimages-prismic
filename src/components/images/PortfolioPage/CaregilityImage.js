@@ -27,7 +27,7 @@ const CaregilityImage = () => {
       height: "auto"
     }}
     fluid={Image}
-    alt={"Services Related Image"}
+    alt={"Yorktel and Caregility logo"}
   >
   </Img>
 }

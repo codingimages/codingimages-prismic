@@ -21,7 +21,7 @@ const CarouselImg1 = ({ slideTitle, slideParagraph, button }) => {
   return <BackgroundImage
     style={{ height: "80vh" }}
     fluid={Image}
-    alt={"Services Related Image"}
+    alt={"Coding screen"}
     backgroundColor={`red`}
   >
     <div className="carousel-custom-style text-light text-center">

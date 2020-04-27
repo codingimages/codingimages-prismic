@@ -22,8 +22,8 @@ const RecentBlogPosts = () => {
     `)
 
   const post = data.prismic.allBlogs.edges
-  console.log(data.prismic.allBlogs.edges)
-  console.log("it is")
+  // console.log(data.prismic.allBlogs.edges)
+  // console.log("it is")
 
 
   return (

@@ -28,7 +28,7 @@ const MobileTechImage = () => {
       objectFit: "contain"
     }}
     fluid={Image}
-    alt={"Services Related Image"}
+    alt={"Mobile development related image"}
   >
   </Img>
 }

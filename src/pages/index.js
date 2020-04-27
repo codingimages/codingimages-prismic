@@ -11,10 +11,10 @@ import LeftContentRightImage from "../components/layout/LeftContentRightImage"
 import Button from "react-bootstrap/Button"
 
 // images
-import ServicesImage from "../components/images/ServicesImage"
-import PortfolioImage from "../components/images/PortfolioImage"
-import BlogImage from "../components/images/BlogImage"
-import TutorialsImage from "../components/images/TutorialImage"
+import ServicesImage from "../components/images/HomePage/ServicesImage"
+import PortfolioImage from "../components/images/HomePage/PortfolioImage"
+import BlogImage from "../components/images/HomePage/BlogImage"
+import TutorialsImage from "../components/images/HomePage/TutorialImage"
 
 // carousel component and images
 import HeaderCarousel from "../components/layout/HeaderCarousel"
