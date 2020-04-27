@@ -12,8 +12,8 @@ module.exports = {
         repositoryName: `codingimagesprismic`,
         pages: [{
           type: `Blog`,
-          match: `/:uid`,
-          path: `/`,
+          match: `/blog/:uid`,
+          path: `/blog/`,
           component: require.resolve("./src/templates/blog.js")
 
         }]

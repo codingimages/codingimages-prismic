@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const RecentBlogPosts = () => {
 
@@ -30,9 +30,9 @@ const RecentBlogPosts = () => {
     <Fragment>
       <ul className="pl-0" style={{ listStyle: "none" }}>
         {post.map(single => (
-          <Link key={single.node._meta.id} to={single.node._meta.uid}>
+          <a key={single.node._meta.id} href={`/blog/` + single.node._meta.uid}>
             <li className="mb-3">{single.node.title[0].text}</li>
-          </Link>
+          </a>
 
         ))}
       </ul>
