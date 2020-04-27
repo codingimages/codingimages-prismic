@@ -9,9 +9,9 @@ const LeftImageRightContent = ({ image, sectionTitle, sectionParagraph, button }
             <Container>
                 <Row >
                     <Col
-                        data-sal="slide-up"
-                        data-sal-delay="0"
-                        data-sal-easing="ease"
+                        // data-sal="slide-up"
+                        // data-sal-delay="0"
+                        // data-sal-easing="ease"
                         xs={12}
                         sm={12}
                         md={5}
@@ -22,9 +22,9 @@ const LeftImageRightContent = ({ image, sectionTitle, sectionParagraph, button }
                         </div>
                     </Col>
                     <Col
-                        data-sal="slide-up"
-                        data-sal-delay="50"
-                        data-sal-easing="ease"
+                        // data-sal="slide-up"
+                        // data-sal-delay="50"
+                        // data-sal-easing="ease"
                         xs={12}
                         sm={12}
                         md={7}

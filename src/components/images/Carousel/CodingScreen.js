@@ -28,9 +28,9 @@ const CarouselImg1 = ({ slideTitle, slideParagraph, button }) => {
       <h1
         className="text-uppercase">{slideTitle}</h1>
       <p
-        data-sal="fade"
-        data-sal-delay="0"
-        data-sal-easing="ease"
+        // data-sal="fade"
+        // data-sal-delay="0"
+        // data-sal-easing="ease"
         className="lead">{slideParagraph}</p>
       {button}
     </div>

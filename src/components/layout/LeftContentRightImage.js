@@ -9,18 +9,18 @@ const LeftContentRightContent = ({ image, sectionTitle, sectionParagraph, button
             <Container>
                 <Row>
                     <Col
-                        data-sal="slide-up"
-                        data-sal-delay="0"
-                        data-sal-easing="ease"
+                        // data-sal="slide-up"
+                        // data-sal-delay="0"
+                        // data-sal-easing="ease"
                         xs={12} sm={12} md={7} lg={6} className="p-3 my-auto">
                         <h2>{sectionTitle}</h2>
                         <p>{sectionParagraph}</p>
                         {button}
                     </Col>
                     <Col
-                        data-sal="slide-up"
-                        data-sal-delay="50"
-                        data-sal-easing="ease"
+                        // data-sal="slide-up"
+                        // data-sal-delay="50"
+                        // data-sal-easing="ease"
                         xs={12} sm={12} md={5} lg={6} className="p-3 mt-3">
                         <div className="w-100">
                             {image}
