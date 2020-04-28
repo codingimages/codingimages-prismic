@@ -11,10 +11,9 @@ import Button from "react-bootstrap/Button"
 import HeaderStatic from "../components/layout/HeaderStatic"
 
 //import blog excerpts
-import AllBlogPosts from "../components/blog/AllPosts"
+import AllBlogPostsCopy from "../components/blog/AllPostsCopy"
 
 const AllBlogsPage = () => {
-
   return (
     <MainLayout>
       <HeaderStatic
@@ -22,7 +21,7 @@ const AllBlogsPage = () => {
         pageSummary="Thanks for visiting my blog. I decided to make it more informational, if you are looking to learn web development, please visit the tutorials page."
         button={<Link to="/tutorials"><Button variant="warning">Tutorials</Button></Link>}
       />
-      <AllBlogPosts />
+      <AllBlogPostsCopy />
     </MainLayout>
   )
 }
