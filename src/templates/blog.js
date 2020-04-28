@@ -41,9 +41,10 @@ query ($uid: String!) {
   }
 `
 
-const Blog = (data) => {
-  // console.log(data.data.prismic.allBlogs.edges)
-  const post = data.data.prismic.allBlogs.edges[0]
+export default ({ data }) => {
+
+  const post = data.prismic.allBlogs.edges[0]
+  console.log(post)
   return (
     <MainLayout>
       <Fragment>
@@ -78,13 +79,4 @@ const Blog = (data) => {
       )
     </MainLayout>
   )
-
-
-
-  // <>
-  //   <h1>{post.title[0].text}</h1>
-  //   <p>{post.summary[0].text}</p>
-  // </>
 }
-
-export default Blog
