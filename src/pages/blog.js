@@ -1,9 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaUser, FaClock } from "react-icons/fa"
-import Moment from "react-moment"
-import 'moment/locale/es';
-
 // layout
 import MainLayout from "../components/layout/MainLayout"
 
@@ -41,13 +37,11 @@ const AllBlogsPage = () => {
             <h4>{excerpt.title}</h4>
             <div className="d-flex text-dark">
               <div className="d-flex align-items-center mr-3">
-                <FaUser className="mr-2" />
                 <p className="m-0">{excerpt.author}</p>
               </div>
               <div className="d-flex align-items-center">
-                <FaClock className="mr-2" />
                 <p className="m-0">Publicado</p>
-                <Moment fromNow>{excerpt.date}</Moment>
+                <p>{excerpt.date}</p>
               </div>
             </div>
             <div className="text-dark my-2" dangerouslySetInnerHTML={{ __html: excerpt.excerpt }}></div>
