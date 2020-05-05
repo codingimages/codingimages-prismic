@@ -30,33 +30,6 @@ const IndexPage = (props) => (
   <MainLayout>
     <Helmet title="Coding Images | Boost Your Business" >
     </Helmet>
-    <HeaderCarousel
-      firstImage={<CarouselImg1
-        slideTitle="Welcome to Coding Images"
-        slideParagraph="Web and Mobile, Development and Design"
-        button={<Link
-          to="/services"><Button
-            className="text-uppercase text-dark"
-            variant="warning">What I Can Do
-          </Button></Link>} />}
-      secondImage={<CarouselImg2
-        slideTitle="Read my Blog"
-        slideParagraph="Valuable resources and information all about the web"
-        button={<Link
-          to="/blog"><Button
-            className="text-uppercase text-dark"
-            variant="warning">Take me There
-          </Button></Link>}
-      />}
-      thirdImage={<CarouselImg3
-        slideTitle="Learn About Web Development"
-        slideParagraph="Learn web development and get a job in the field"
-        button={<Link
-          to="/blog"><Button
-            className="text-uppercase text-dark"
-            variant="warning">Take me There
-          </Button></Link>}
-      />} />
     <main>
       <LeftContentRightImage
         image={<ServicesImage style={{ width: "80%", margin: "auto" }} />}
