@@ -1,13 +1,7 @@
-import React, { Fragment } from "react"
-import { graphql } from "gatsby"
-
-import { RichText } from 'prismic-reactjs'
+import React from "react"
 
 // components
 import MainLayout from "../components/layout/MainLayout"
-import BlogPageHeader from "../components/blog/BlogPageHeader"
-import BlogSideBar from "../components/blog/SideBar"
-import ShareIcons from "../components/share/ShareIcons"
 
 
 // bootstrap components
@@ -16,67 +10,60 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
 // helmet
-import MetaTags from "../components/meta/MetaTags"
+// import MetaTags from "../components/meta/MetaTags"
 
 export const query = graphql`
-query ($uid: String!) {
-    prismic {
-      allBlogs(uid: $uid) {
-        edges {
-          node {
-            _meta {
-              uid
-              id
+    query ($title: String!) {
+        wpgraphql {
+            posts(where: {title: $title}) {
+                nodes {
+                    author {
+                        name
+                    }
+                    date
+                    categories {
+                        nodes {
+                            slug
+                        }
+                    }
+                    title
+                    excerpt
+                    content(format: RENDERED)
+                }
             }
-            author
-            date
-            title
-            summary
-            content
-            images
-          }
         }
-      }
     }
-  }
 `
 
-export default ({ data }) => {
 
-  const post = data.prismic.allBlogs.edges[0]
-  console.log(post)
+const BlogPostPage = ({ data }) => {
+  const entrada = data.wpgraphql.posts.nodes[0]
   return (
-    <MainLayout>
-      <Fragment>
-        <MetaTags title={`Coding Images | ` + post.node.title[0].text} />
+    <>
+      <MainLayout>
 
-        <BlogPageHeader
-          key={post.node._meta.id}
-          title={post.node.title[0].text}
-          excerpt={post.node.summary[0].text}
-          imgSrc={post.node.images.url}
-        ></BlogPageHeader>
-        <Container className="bg-dark text-light" fluid>
-          <Container className="d-flex align-items-center justify-content-start flex-wrap py-3">
-            <p className="m-0 mr-4">Author: {post.node.author[0].text}</p>
-            <p className="m-0">Published: {post.node.date}</p>
-          </Container>
-        </Container>
-        <Container>
+        <Container className="py-5">
+          {/* Content */}
           <Row>
-            <Col sm={12} md={8} xl={9}>
-              <Container className="py-5 px-0">
-                <RichText render={post.node.content} />
-              </Container>
-              <ShareIcons />
+            <Col sm={12} lg={8}>
+              <div
+                style={{
+
+                }}
+                dangerouslySetInnerHTML={{ __html: entrada.content }}>
+              </div>
+
             </Col>
-            <Col sm={12} md={4} xl={3}>
-              <BlogSideBar className="py-5 px-0" />
+
+            <Col sm={12} lg={4}>
+
             </Col>
           </Row>
         </Container>
-      </Fragment>
-      )
-    </MainLayout>
+
+      </MainLayout>
+    </>
   )
 }
+
+export default BlogPostPage

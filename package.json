@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Coding Images",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Boost your business",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Reynaldo Navedo",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gatsby": "^2.21.0",
@@ -14,14 +14,18 @@
     "gatsby-plugin-react-helmet": "^3.3.0",
     "gatsby-plugin-sharp": "^2.6.0",
     "gatsby-source-filesystem": "^2.3.0",
-    "gatsby-source-prismic-graphql": "^3.4.0-beta.2",
+    "gatsby-source-graphql": "^2.5.1",
     "gatsby-transformer-sharp": "^2.5.0",
+    "moment": "^2.25.3",
+    "moment-timezone": "^0.5.28",
     "prismic-reactjs": "^1.3.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "react-icons": "^3.10.0",
+    "react-moment": "^0.9.7"
   },
   "devDependencies": {
     "prettier": "2.0.4"

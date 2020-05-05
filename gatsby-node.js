@@ -1,7 +1,33 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+exports.createPages = async ({ actions, graphql, reporter }) => {
+    const resultado = await graphql(`
+      query {
+          wpgraphql {
+            posts {
+              nodes {
+                title
+              }
+            }
+          }
+        }
+      `);
 
-// You can delete this file if you're not using it
+    console.log(resultado.data.wpgraphql.posts.nodes)
+
+    if (resultado.errors) {
+        reporter.panic("No hubo resultados", resultado.errors);
+    }
+
+    // si hay paginas crear los archivos
+    const entradas = resultado.data.wpgraphql.posts.nodes;
+
+    entradas.forEach(entrada => {
+
+        actions.createPage({
+            path: `/post/${entrada.title}`,
+            component: require.resolve("./src/templates/blog.js"),
+            context: {
+                title: entrada.title,
+            },
+        })
+    })
+}

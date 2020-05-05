@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import Container from "react-bootstrap/Container"
 import logo from "../../images/logo.png"
+import { Link } from "gatsby"
 
 const NavigationBar = () => {
 
@@ -23,35 +24,47 @@ const NavigationBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
 
-                        <Nav.Link
-                            href="/"
+                        <Link
+                            className="nav-link"
+                            activeClassName="active"
+                            to="/"
                         > Home
-                        </Nav.Link>
+                        </Link>
 
-                        <Nav.Link
-                            href="/services"
+                        <Link
+                            className="nav-link"
+                            activeClassName="active"
+                            to="/services"
                         > Services
-                        </Nav.Link>
+                        </Link>
 
-                        <Nav.Link
-                            href="/portfolio"
+                        <Link
+                            className="nav-link"
+                            activeClassName="active"
+                            to="/portfolio"
                         > Portfolio
-                        </Nav.Link>
+                        </Link>
 
-                        <Nav.Link
-                            href="/blog"
+                        <Link
+                            className="nav-link"
+                            activeClassName="active"
+                            to="/blog"
                         > Blog
-                        </Nav.Link>
+                        </Link>
 
-                        <Nav.Link
-                            href="/tutorials"
+                        <Link
+                            className="nav-link"
+                            activeClassName="active"
+                            to="/tutorials"
                         > Tutorials
-                        </Nav.Link>
+                        </Link>
 
-                        <Nav.Link
-                            href="/contact"
+                        <Link
+                            className="nav-link"
+                            activeClassName="active"
+                            to="/contact"
                         > Contact
-                        </Nav.Link>
+                        </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

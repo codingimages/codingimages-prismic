@@ -7,16 +7,11 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-prismic-graphql`,
+      resolve: `gatsby-source-graphql`,
       options: {
-        repositoryName: `codingimagesprismic`,
-        pages: [{
-          type: `Blog`,
-          match: `/blog/:uid`,
-          path: `/blog/`,
-          component: require.resolve("./src/templates/blog.js")
-
-        }]
+        typeName: `WPGraphQL`,
+        fieldName: `wpgraphql`,
+        url: `https://admin.codingimages.com/graphql`
       }
     },
     {
