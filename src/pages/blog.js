@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Moment from "react-moment"
+import Moment from 'react-moment';
 import 'moment/locale/es';
 
 // layout
