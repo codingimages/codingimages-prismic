@@ -17,10 +17,7 @@ import BlogImage from "../components/images/HomePage/BlogImage"
 import TutorialsImage from "../components/images/HomePage/TutorialImage"
 
 // carousel component and images
-import HeaderCarousel from "../components/layout/HeaderCarousel"
-import CarouselImg1 from "../components/images/Carousel/CodingScreen"
-import CarouselImg2 from "../components/images/Carousel/ReadBlog"
-import CarouselImg3 from "../components/images/Carousel/LearnTogether"
+import HeaderStaticNoBtn from "../components/layout/HeaderStaticNoBtn"
 
 //meta
 import Helmet from "../components/meta/MetaTags"
@@ -31,6 +28,10 @@ const IndexPage = (props) => (
     <Helmet title="Coding Images | Boost Your Business" >
     </Helmet>
     <main>
+      <HeaderStaticNoBtn
+        pageType="Website"
+        pageSummary="Web development services and tutorials"
+      />
       <LeftContentRightImage
         image={<ServicesImage style={{ width: "80%", margin: "auto" }} />}
         sectionTitle="This is what I can help with "
