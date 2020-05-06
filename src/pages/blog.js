@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import Moment from 'react-moment';
-import 'moment/locale/es';
+// import Moment from 'react-moment';
+// import 'moment/locale/es-us';
 
 // layout
 import MainLayout from "../components/layout/MainLayout"
@@ -57,10 +57,10 @@ const AllBlogsPage = () => {
                       <div className="d-flex align-items-center mr-3">
                         <p className="m-0 text-secondary">{`Por ${excerpt.author}`}</p>
                       </div>
-                      <div className="d-flex align-items-center text-secondary">
+                      {/* <div className="d-flex align-items-center text-secondary">
                         <p className="m-0 mr-1 text-secondary">Publicado</p>
                         <Moment fromNow>{excerpt.date}</Moment>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="text-dark my-2" dangerouslySetInnerHTML={{ __html: excerpt.excerpt }}></div>
                   </Col>
