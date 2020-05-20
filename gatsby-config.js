@@ -2,9 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Coding Images`,
     description: `Coding Images, all about web development services and tutorials.`,
+    siteUrl: `https://www.codingimages.com`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-graphql`,
