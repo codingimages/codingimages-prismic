@@ -11,6 +11,8 @@ import Jumbotron from "react-bootstrap/Jumbotron"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
+import ShareIcons from "../components/share/ShareIcons"
+
 // helmet
 // import MetaTags from "../components/meta/MetaTags"
 
@@ -68,7 +70,7 @@ const BlogPostPage = ({ data }) => {
                 }}
                 dangerouslySetInnerHTML={{ __html: entrada.content }}>
               </div>
-
+              <ShareIcons />
             </Col>
 
             <Col sm={12} lg={4}>

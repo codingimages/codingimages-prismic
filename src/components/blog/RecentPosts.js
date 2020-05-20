@@ -8,7 +8,7 @@ const RecentBlogPosts = () => {
   const data = useStaticQuery(graphql`
 {
   wpgraphql {
-    posts(where: {categoryId: 2}, last: 5) {
+    posts(where: {categoryId: 2}, last: 8) {
       nodes {
         title
       }
