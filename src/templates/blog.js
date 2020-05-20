@@ -56,7 +56,7 @@ const BlogPostPage = ({ data }) => {
               <h1>{entrada.title}</h1>
               <p dangerouslySetInnerHTML={{ __html: entrada.excerpt }} className="lead"></p>
             </div>
-            <img style={{ width: "100%", height: 200, objectFit: "cover" }} className="d-none d-lg-block mx-auto my-auto w-50" src={entrada.featuredImage.mediaItemUrl} alt={entrada.featuredImage.altText} />
+            <img src={entrada.featuredImage.mediaItemUrl} style={{ width: "100%", height: 200, objectFit: "cover" }} className="d-none d-lg-block mx-auto my-auto w-50" alt={entrada.featuredImage.altText} />
           </Container>
         </Jumbotron>
 
