@@ -25,7 +25,7 @@ const RecentBlogPosts = () => {
       <h3>Recent Blogs</h3>
       {links.map(link => (
         <>
-          <div className="my-3">
+          <div key={link.title} className="my-3">
             <Link
               to={`/post/${link.title}`}
             >
