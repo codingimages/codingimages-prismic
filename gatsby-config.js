@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Coding Images`,
-    description: `Coding Images, web development services and tutorials.`,
+    description: `Coding Images, all about web development services and tutorials.`,
     author: `@gatsbyjs`,
   },
   plugins: [

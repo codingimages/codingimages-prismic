@@ -9,6 +9,8 @@ import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 
+import MetaTags from "../components/meta/MetaTags"
+
 class FormikCloudForm extends React.Component {
     state = {
         name: '',
@@ -50,6 +52,11 @@ class FormikCloudForm extends React.Component {
 
         return (
             <MainLayout>
+                <MetaTags
+                    title="Coding Images | Contact Page"
+                    description="Contact Coding Images with any questions or inquiries, I want to help."
+                    keywords="Coding Images, Contact Page"
+                />
                 <HeaderStatic
                     pageType="Contact Form"
                     pageSummary="Let us know what help do you need or if you have any questions."

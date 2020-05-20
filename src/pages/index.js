@@ -20,13 +20,17 @@ import TutorialsImage from "../components/images/HomePage/TutorialImage"
 import HeaderStaticNoBtn from "../components/layout/HeaderStaticNoBtn"
 
 //meta
-import Helmet from "../components/meta/MetaTags"
+import MetaTags from "../components/meta/MetaTags"
 
-const IndexPage = (props) => (
+const IndexPage = () => (
 
   <MainLayout>
-    <Helmet title="Coding Images | Boost Your Business" >
-    </Helmet>
+    <MetaTags
+      title="Coding Images | Boost Your Business | Web development services and tutorials"
+      description="Coding Images, all about web development services and tutorials."
+      keywords="Web Development, HTML, CSS, JavaScript, Learn, Web, Development, Free, Learn Web Development Free, HTML CSS Javascript, JS"
+    />
+
     <main>
       <HeaderStaticNoBtn
         pageType="Website"

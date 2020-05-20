@@ -18,7 +18,6 @@ const RecentBlogPosts = () => {
 `)
 
   const links = data.wpgraphql.posts.nodes
-  console.log(links)
 
   return (
     <aside className="my-3">

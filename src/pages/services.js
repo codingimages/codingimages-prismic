@@ -16,9 +16,16 @@ import HeaderStatic from "../components/layout/HeaderStatic"
 import LeftContentRightImage from "../components/layout/LeftContentRightImage"
 import LeftImageRightContent from "../components/layout/LeftImageRightContent"
 
+import MetaTags from "../components/meta/MetaTags"
+
 
 const ServicesPage = () => (
     <MainLayout>
+        <MetaTags
+            title="Coding Images | Web Development Services"
+            description="Web development services like websites using HTML, CSS and Javascript as well as Wordpress CMS or Javascript Frameworks."
+            keywords="Web Development, HTML, CSS, JavaScript, Learn, Web, Development, Free, Learn Web Development Free, HTML CSS Javascript, JS, ReactJS, Wordpress, CMS, Headless CMS, React Native, Mobile Applications"
+        />
         <HeaderStatic
             pageType="Services"
             pageSummary="Take a look at the technologies that I know and have experience working with. You can also see my portfolio from the link below"

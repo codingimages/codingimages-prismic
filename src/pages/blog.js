@@ -18,14 +18,19 @@ import RecentBlogPosts from "../components/blog/RecentPosts"
 //import blog excerpts
 import useBlogPosts from "../hooks/useBlogPosts"
 
+import MetaTags from "../components/meta/MetaTags"
+
 const AllBlogsPage = () => {
 
   const allBlogExcerpts = useBlogPosts()
 
-  console.log(allBlogExcerpts)
-
   return (
     <MainLayout>
+      <MetaTags
+        title="Coding Images | Blog"
+        description="Take a look at my blog.  Here I write all about web development tips, latest trendings, and personal experiences."
+        keywords="Web Development Blog, Blog, Portfolio, Web Development Portfolio, HTML, CSS, JavaScript, Learn, Web, Development, Free, Learn Web Development Free, HTML CSS Javascript, JS, ReactJS, Wordpress, CMS, Headless CMS, React Native, Mobile Applications"
+      />
       <HeaderStatic
         pageType="Blog"
         pageSummary="Thanks for visiting my blog. I decided to make it more informational, if you are looking to learn web development, please visit the tutorials page."

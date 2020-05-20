@@ -12,6 +12,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
 import ShareIcons from "../components/share/ShareIcons"
+import MetaTags from "../components/meta/MetaTags"
 
 // helmet
 // import MetaTags from "../components/meta/MetaTags"
@@ -51,6 +52,11 @@ const BlogPostPage = ({ data }) => {
   return (
     <>
       <MainLayout>
+        <MetaTags
+          title={entrada.title}
+          description={entrada.title}
+          keywords={entrada.title}
+        />
         <Jumbotron className="m-0 bg-primary" fluid>
           <Container className="text-light d-flex align-items-center">
             <div className="p-3 my-auto">

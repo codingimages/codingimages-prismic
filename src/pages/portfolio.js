@@ -16,10 +16,18 @@ import Button from "react-bootstrap/Button"
 import CaregilityImage from "../components/images/PortfolioPage/CaregilityImage"
 import SantiempleoImage from "../components/images/PortfolioPage/SantiEmpleoImage"
 import CreatedForGreaterImage from "../components/images/PortfolioPage/CreatedForGreaterImage"
+import FrutoDelEspirituImage from "../components/images/PortfolioPage/FrutoDelEspiritu"
+
+import MetaTags from "../components/meta/MetaTags"
 
 
 const PortfolioPage = () => (
     <MainLayout>
+        <MetaTags
+            title="Coding Images | Reynaldo Naved - Web Development Portfolio"
+            description="Take a look at my portfolio websites using HTML, CSS, Javascript as well as Wordpress CMS and Javascript Frameworks."
+            keywords="Portfolio, Web Development Portfolio, HTML, CSS, JavaScript, Learn, Web, Development, Free, Learn Web Development Free, HTML CSS Javascript, JS, ReactJS, Wordpress, CMS, Headless CMS, React Native, Mobile Applications"
+        />
         <HeaderStatic
             pageType="Portfolio"
             pageSummary="Take a look at my portfolio, here you can see my work and the technologies that I have experience with. Enjoy." />
@@ -66,11 +74,11 @@ const PortfolioPage = () => (
         />
 
         <LeftImageRightContent
-            image={<SantiempleoImage />}
-            sectionTitle="Santi Empleo"
-            sectionParagraph={"Santi Empleo is one of my older clients, is a talent agency for hispanics.  From a headless CMS the jobs are posted and therefore fetched in the frontend, users can browse and apply for jobs. I also design and code a mobile application for them."}
+            image={<FrutoDelEspirituImage />}
+            sectionTitle="Fruto del Espíritu"
+            sectionParagraph={"Fruto del Espíritu is a religious site built with Gatsby using Wordpress as a Headless CMS.  The advantage of doing this is perormance due the nature of gatsby doing things."}
             button={<Button
-                href="https://santiempleo.com/"
+                href="https://frutodelespiritu.com/"
                 target="_blank"
                 className="text-uppercase"
                 variant="warning"
