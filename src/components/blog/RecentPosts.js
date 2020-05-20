@@ -24,15 +24,13 @@ const RecentBlogPosts = () => {
     <aside className="my-3">
       <h3>Recent Blogs</h3>
       {links.map(link => (
-        <>
-          <div key={link.title} className="my-3">
-            <Link
-              to={`/post/${link.title}`}
-            >
-              {link.title}
-            </Link>
-          </div>
-        </>
+        <div key={link.title} className="my-3">
+          <Link
+            to={`/post/${link.title}`}
+          >
+            {link.title}
+          </Link>
+        </div>
       ))
       }
     </aside >

@@ -47,8 +47,7 @@ export const query = graphql`
 const BlogPostPage = ({ data }) => {
 
   const entrada = data.wpgraphql.posts.nodes[0]
-  const imagePic = entrada.featuredImage.mediaItemUrl
-  const imageAlt = entrada.featuredImage.altText
+  console.log(data.wpgraphql.posts.nodes[0].featuredImage.mediaItemUrl)
 
   return (
     <>
@@ -59,7 +58,7 @@ const BlogPostPage = ({ data }) => {
               <h1>{entrada.title}</h1>
               <p dangerouslySetInnerHTML={{ __html: entrada.excerpt }} className="lead"></p>
             </div>
-            <img src={imagePic} alt={imageAlt} style={{ width: "100%", height: 200, objectFit: "cover" }} className="d-none d-lg-block mx-auto my-auto w-50" />
+            <img src={data.wpgraphql.posts.nodes[0].featuredImage.mediaItemUrl} alt="Developing" style={{ width: "100%", height: 200, objectFit: "cover" }} className="d-none d-lg-block mx-auto my-auto w-50" />
           </Container>
         </Jumbotron>
 
