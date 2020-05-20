@@ -65,6 +65,18 @@ const PortfolioPage = () => (
             >Check it out</Button>}
         />
 
+        <LeftImageRightContent
+            image={<SantiempleoImage />}
+            sectionTitle="Santi Empleo"
+            sectionParagraph={"Santi Empleo is one of my older clients, is a talent agency for hispanics.  From a headless CMS the jobs are posted and therefore fetched in the frontend, users can browse and apply for jobs. I also design and code a mobile application for them."}
+            button={<Button
+                href="https://santiempleo.com/"
+                target="_blank"
+                className="text-uppercase"
+                variant="warning"
+            >Check it out</Button>}
+        />
+
     </MainLayout>
 )
 
