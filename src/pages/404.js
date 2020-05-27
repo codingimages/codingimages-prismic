@@ -7,7 +7,6 @@ import ErrorPageComponent from "../components/layout/ErrorPageComponent"
 const NotFoundPage = () => (
   <MainLayout>
     <ErrorPageComponent />
-    <main>Main Content</main>
   </MainLayout>
 )
 

@@ -59,7 +59,7 @@ const AllBlogsPage = () => {
                     <Link to={`/post/${excerpt.title}`}><h4>{excerpt.title}</h4></Link>
                     <div className="d-flex text-dark">
                       <div className="d-flex align-items-center mr-3">
-                        <p className="m-0 text-secondary">{`Por ${excerpt.author}`}</p>
+                        <p className="m-0 text-secondary">{`By ${excerpt.author}`}</p>
                       </div>
                       <div className="d-flex align-items-center text-secondary">
                         <p className="m-0 mr-1 text-secondary">Published</p>

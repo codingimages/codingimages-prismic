@@ -55,5 +55,77 @@ module.exports = {
         exitEventName: 'sal:out', // Exit event name
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-69556726-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        pageTransitionDelay: 0,
+        // Enables Google Optimize using your container Id
+        defer: false,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({
+              query: {
+                site, wpgraphql
+              } }) => {
+              return wpgraphql.posts.nodes.map(edge => {
+                return Object.assign({}, edge, {
+                  description: edge.excerpt,
+                  date: edge.date,
+                  url: site.siteMetadata.siteUrl + "/post/" + edge.title,
+                })
+              })
+            },
+            query: `
+            {
+              wpgraphql {
+                posts(first: 200){
+                  nodes {
+                    excerpt
+                    slug
+                    date
+                    title
+                  }
+                }
+              }
+            }
+            `,
+            output: "/rss.xml",
+            title: "Coding Images RSS Feed",
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
+          },
+        ],
+      },
+    },
   ],
 }
