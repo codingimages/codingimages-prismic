@@ -20,7 +20,7 @@
     "gatsby-source-filesystem": "^2.3.0",
     "gatsby-source-graphql": "^2.5.1",
     "gatsby-transformer-sharp": "^2.5.0",
-    "moment": "^2.25.3",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.28",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
